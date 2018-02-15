@@ -1,0 +1,13 @@
+LIBRARY IEEE;
+USE  IEEE.STD_LOGIC_1164.all;
+USE  IEEE.STD_LOGIC_UNSIGNED.all;
+
+ENTITY vref IS
+	generic ( B: std_logic_vector:=8);
+	Port(Bref : out std_logic_vector(8 downto 0));
+END vref;
+
+ARCHITECTURE sol OF seismil_bin IS
+BEGIN
+	seis_mil<=B;
+END sol;

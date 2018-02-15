@@ -1,0 +1,11 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+Entity controlador is
+	Port( Start, Stop, Min, Max, Resetn, Clock : in std_logic;
+			ADC_Sensor : in std_logic_vector(7 downto 0);
+			DoneDivision, Pendiente, mayor_BPMmax, menor_BPMmin, ok3s, cntStart, primera : in std_logic;
+			LedVerde, enStart, resetn3s, en3s, s1, s0, resetnStart, enPrim, resetnPrim, LdProm, resetnProm : out std_logic;
+			enProm, resetnReg, enCNT, resetnCNT, resetnDivisor, StartDivisor, enRegMax, enRegMin, inMin : out std_logic);
+			
+	

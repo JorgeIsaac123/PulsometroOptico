@@ -1,0 +1,13 @@
+LIBRARY IEEE;
+USE  IEEE.STD_LOGIC_1164.all;
+USE  IEEE.STD_LOGIC_UNSIGNED.all;
+
+ENTITY bits8to13 IS
+	Port(seis_mil : out std_logic_vector(12 downto 0));
+END bits8to13;
+
+ARCHITECTURE sol OF bits8to13 IS
+BEGIN
+	seis_mil<="0001011101110";--"1011101110000"
+END sol;
+

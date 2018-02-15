@@ -1,0 +1,11 @@
+LIBRARY IEEE;
+USE  IEEE.STD_LOGIC_1164.all;
+
+ENTITY mux_dff IS
+	Port(seis_mil : out std_logic_vector(12 downto 0));
+END mux_dff;
+
+ARCHITECTURE comportamiento OF mux_dff IS
+BEGIN
+	seis_mil<="1011101110000";
+END comportamiento;
