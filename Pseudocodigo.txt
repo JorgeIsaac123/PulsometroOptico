@@ -1,0 +1,71 @@
+while (start=0){}
+while (start=1){}
+BPMmin=255;
+BPMmax=0;
+cntStart=0;
+BPM=0;
+muestreando=1;
+
+while (muestreando==1){
+	LedVerde=1;
+	TcsProm=0;
+	primera=1;
+	while (stop==0){
+		if (start==1){
+			while (start==1){}
+			if (cntStart==0){
+				cntStart=1;
+				en3s=1;
+			}else{
+				if (ok3s==0){end}
+				else{resetn3s=1; en3s=1;}
+			}
+		}
+
+		
+		if (pendiente==0){while (pendiente==0){}}
+		while (pendiente==1){}
+		Tcs=0; #resetnCNT=1
+		enCNT=1;
+		while (pendiente==0){Tcs+=1}
+		while (pendiente==1){Tcs+=1}
+		if (primera==1){
+			TcsProm=(TcsProm+Tcs)
+			primera=0;
+		}else{
+			TcsProm=(TcsProm+Tcs)/2
+		}
+		BPM=6000/TcsProm
+		#enDeco=1; #mostrar en display BPM actual
+
+		if  (BPM<BPMmin){
+			BPMmin = BPM;
+		}
+		if (BPM>BPMmax){
+			BPMmax = BPM;
+		}
+	}LedVerde=0;
+	while (stop==1){}
+
+	while (stop==0){
+		if (start==1){
+			while (start==1){}
+			if (cntStart==0){
+				cntStart=1;
+				en3s=1;
+			}else{
+				if (ok3s==0){end}
+				else{resetn3s=1;}
+			}
+		}
+
+		if (Max==1){
+			numero=BPMmaxin;
+		}elsif (Minax==1){
+			numero=BPMminax;
+		}
+		#Mostrar en Display el numero
+		#enDeco=1 siempre estara encendido los Display
+
+	}while (stop==1){}
+}
